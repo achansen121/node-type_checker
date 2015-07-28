@@ -32,6 +32,12 @@
     ts = type_str[tk];
     o[tk] = gen_type_enf(ts, tk);
   }
+  
+  o.array=function (a) {
+    assert(arguments.length === 1, "Wrong number of arguments");
+    assert(Array.isArray(a), "Not type array");
+    return a;
+  };
 
   o.object = function(a) {
     assert(arguments.length === 1, "Wrong number of arguments");
