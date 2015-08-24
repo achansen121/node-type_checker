@@ -81,7 +81,7 @@
       o.object(sub_interface_defs);
       for (k in sub_interface_defs) {
         sint = sub_interface_defs[k];
-        o.undefined(interface_obj.required_keys[k]);
+        o["undefined"](interface_obj.required_keys[k]);
         
         o.is_valid_interface(sint);
         interface_obj.required_keys[k] = sint;
