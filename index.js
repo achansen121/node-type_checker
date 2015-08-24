@@ -16,9 +16,9 @@
 
   type_str.object = typeof {};
 
-  type_str.undefined = typeof void 0;
+  type_str["undefined"] = typeof void 0;
 
-  type_str.boolean = typeof true;
+  type_str["boolean"] = typeof true;
 
   gen_type_enf = function(ts, tk) {
     return function(a) {
